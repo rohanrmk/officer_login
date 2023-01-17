@@ -122,7 +122,7 @@ class _SignUpState extends State<SignUp> {
                                     color: Colors.black54,
                                     fontWeight: FontWeight.w300
                                 ),
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   isDense: true,
                                   hintText: 'Osmanabad',
                                   border: OutlineInputBorder(
@@ -169,7 +169,7 @@ class _SignUpState extends State<SignUp> {
                                     fontFamily: 'Montserrat-Regular',
                                     color: Colors.black54,fontWeight: FontWeight.w300
                                 ),
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   isDense: true,
                                   border: OutlineInputBorder(
                                       borderSide: BorderSide.none),
@@ -213,7 +213,7 @@ class _SignUpState extends State<SignUp> {
                                 style: const TextStyle(
                                     fontFamily: 'Montserrat-Regular',color: Colors.black54,fontWeight: FontWeight.w300
                                 ),
-                                decoration: InputDecoration(
+                                decoration: const InputDecoration(
                                   isDense: true,
                                   border: OutlineInputBorder(
                                       borderSide: BorderSide.none),

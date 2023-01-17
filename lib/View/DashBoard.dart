@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:officer_login/View/post_grievance.dart';
 
 import '../Utility/DashboardCommonWidget.dart';
 import '../Utility/PieChartUtility.dart';
@@ -23,7 +24,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      key: _key,
+      // key: _key,
       drawer: Drawer(
         backgroundColor: Colors.white,
         child: Padding(
@@ -47,10 +48,10 @@ class _DashboardState extends State<Dashboard> {
                       ),
                     ],
 
-                    decoration: BoxDecoration(color: Colors.white),
+                    decoration: const BoxDecoration(color: Colors.white),
 
 
-                    accountName: Text(
+                    accountName: const Text(
                       'Mukul Joshi',
                       style: TextStyle(
                           fontSize: 22,
@@ -58,7 +59,7 @@ class _DashboardState extends State<Dashboard> {
                           // fontWeight: FontWeight.w700,
                           fontFamily: 'Montserrat-Regular'),
                     ),
-                    accountEmail: Text("sundar@appmaking.co"),
+                    accountEmail: const Text("sundar@appmaking.co"),
                   ),
 
 
@@ -127,7 +128,7 @@ class _DashboardState extends State<Dashboard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Padding(
@@ -141,7 +142,7 @@ class _DashboardState extends State<Dashboard> {
                           },
                           icon: SvgPicture.asset('assets/images/menu.svg',
                               height: 18, color: Colors.white)),
-                      Spacer(),
+                      const Spacer(),
                       IconButton(
                           onPressed: () {
                             Get.toNamed("/NotificationScreen");
@@ -203,16 +204,16 @@ class _DashboardState extends State<Dashboard> {
                                 color: Colors.black,
                                 fontFamily: "Montserrat-SemiBold",
                                 fontSize: 14)),
-                        SizedBox(
+                        const SizedBox(
                           width: 4,
                         ),
-                        Icon(
+                        const Icon(
                           Icons.calendar_month,
                           color: Color(0xFFb83058),
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height:25,
                     ),
                     SizedBox(
@@ -230,7 +231,7 @@ class _DashboardState extends State<Dashboard> {
                         ),
                       ),
                     ),
-                    SizedBox(height:35,),
+                    const SizedBox(height:35,),
                     Container(
                       height: 200,
                       width: MediaQuery.of(context).size.width/1.27,
@@ -241,13 +242,13 @@ class _DashboardState extends State<Dashboard> {
                             children: [ Container(
                               height: 14,
                               width: 14,
-                              color: Color(0xFF81D4FA),
+                              color: const Color(0xFF81D4FA),
                             ),
-                              SizedBox(width: 18,),
-                              Text("Open",
+                              const SizedBox(width: 18,),
+                              const Text("Open",
                                 style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
-                              Spacer(),
-                              Text("35%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
+                              const Spacer(),
+                              const Text("35%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
 
                           ),
@@ -255,13 +256,13 @@ class _DashboardState extends State<Dashboard> {
                             children: [ Container(
                                 height: 14,
                                 width: 14,
-                                color:  Color(0xFFFBC02D)
+                                color:  const Color(0xFFFBC02D)
                             ),
-                              SizedBox(width: 18,),
-                              Text("Accepted",
+                              const SizedBox(width: 18,),
+                              const Text("Accepted",
                                 style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
-                              Spacer(),
-                              Text("15%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
+                              const Spacer(),
+                              const Text("15%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
 
                           ),
@@ -269,12 +270,12 @@ class _DashboardState extends State<Dashboard> {
                             children: [ Container(
                               height: 14,
                               width: 14,
-                              color:Color(0xFFAED581),
+                              color:const Color(0xFFAED581),
                             ),
-                              SizedBox(width: 18,),
-                              Text("Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
-                              Spacer(),
-                              Text(" 20%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
+                              const SizedBox(width: 18,),
+                              const Text("Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
+                              const Spacer(),
+                              const Text(" 20%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
 
                           ),
@@ -282,12 +283,12 @@ class _DashboardState extends State<Dashboard> {
                             children: [ Container(
                                 height: 14,
                                 width: 14,
-                                color:Color(0xFFB388FF)
+                                color:const Color(0xFFB388FF)
                             ),
-                              SizedBox(width: 18,),
-                              Text("Partially Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
-                              Spacer(),
-                              Text("15%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
+                              const SizedBox(width: 18,),
+                              const Text("Partially Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
+                              const Spacer(),
+                              const Text("15%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
 
                           ),
@@ -297,10 +298,10 @@ class _DashboardState extends State<Dashboard> {
                               width: 14,
                               color: Colors.red.shade400,
                             ),
-                              SizedBox(width: 18,),
-                              Text("Rejected",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium")),
-                              Spacer(),
-                              Text("10%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
+                              const SizedBox(width: 18,),
+                              const Text("Rejected",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium")),
+                              const Spacer(),
+                              const Text("10%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
 
                           ),
@@ -339,6 +340,8 @@ class _DashboardState extends State<Dashboard> {
                   children: [
                     GestureDetector(
                       onTap: () {
+
+                        districtViewModal.isLoading.value = true;
                         Get.toNamed("/PostGrievanceScreen");
                       },
                       child: dashboardGridContainer(context,
@@ -346,7 +349,41 @@ class _DashboardState extends State<Dashboard> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Get.toNamed("/GrievanceReceivedScreen");
+                        setState(() {
+                          selectedDistrictValue = null;
+                          districtViewModal.districtList.clear();
+                          districtViewModal.isLoading.value = true;
+                          districtViewModal.getAllDistrict();
+
+                          selectedTalukaValue = null;
+                          talukaViewModal.talukaList.clear();
+                          talukaViewModal.isLoading.value = true;
+                          talukaViewModal.getAllTaluka();
+
+                          selectedVillageValue = null;
+                          villageViewModal.villageList.clear();
+                          villageViewModal.isLoading.value = true;
+                          villageViewModal.getAllVillage(selectedTalukaValue!);
+
+                          selectedDepartmentValue = null;
+                          departmentViewModal.departmentList.clear();
+                          departmentViewModal.isLoading.value = true;
+                          departmentViewModal.getAllDepartment();
+
+                          selectedOfficeValue = null;
+                          officeViewModal.officeList.clear();
+                          officeViewModal.isLoading.value = true;
+                          officeViewModal.getOfficeDropDown(selectedDepartmentValue!);
+
+                          selectedNatureValue = null;
+                          villageViewModal.villageList.clear();
+                          villageViewModal.isLoading.value = true;
+                          villageViewModal.getAllVillage(selectedOfficeValue!);
+
+                          description.clear();
+                          postImageList.clear();
+                          Get.toNamed("/GrievanceReceivedScreen");
+                        });
                       },
                       child: dashboardGridContainer(context,
                           imageIconPath: 'assets/images/Track Grievance.svg',
@@ -378,7 +415,7 @@ class _DashboardState extends State<Dashboard> {
           Padding(
             padding:  EdgeInsets.only(top:MediaQuery.of(context).size.height/3.4,left:MediaQuery.of(context).size.width/2.35 ),
             child: Column(
-              children: [
+              children: const [
                 Text("11200",style: TextStyle(color: Colors.cyan,fontSize: 25,),),
                 Text("Total",style: TextStyle(color: Colors.black,fontSize: 16),),
               ],

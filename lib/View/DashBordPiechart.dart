@@ -49,7 +49,7 @@ class _DashboardPieChartState extends State<DashboardPieChart> {
                     decoration: BoxDecoration(color: Colors.white),
 
 
-                    accountName: Text(
+                    accountName: const Text(
                       'Mukul Joshi',
                       style: TextStyle(
                           fontSize: 22,
@@ -245,7 +245,7 @@ class _DashboardPieChartState extends State<DashboardPieChart> {
                               color: Color(0xFF81D4FA),
                             ),
                             SizedBox(width: 18,),
-                            Text("Open",
+                            const Text("Open",
                             style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
                             Spacer(),
                               Text("35%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
@@ -259,10 +259,10 @@ class _DashboardPieChartState extends State<DashboardPieChart> {
                               color:  Color(0xFFFBC02D)
                             ),
                               SizedBox(width: 18,),
-                              Text("Accepted",
+                              const Text("Accepted",
                                 style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
                               Spacer(),
-                              Text("15%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
+                              const Text("15%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
 
                           ),
@@ -270,12 +270,12 @@ class _DashboardPieChartState extends State<DashboardPieChart> {
                             children: [ Container(
                               height: 14,
                               width: 14,
-                              color:Color(0xFFAED581),
+                              color:const Color(0xFFAED581),
                             ),
-                              SizedBox(width: 18,),
-                              Text("Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
-                              Spacer(),
-                              Text(" 20%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
+                              const SizedBox(width: 18,),
+                              const Text("Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
+                              const Spacer(),
+                              const Text(" 20%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
 
                           ),
@@ -286,7 +286,7 @@ class _DashboardPieChartState extends State<DashboardPieChart> {
                               color:Color(0xFFB388FF)
                             ),
                               SizedBox(width: 18,),
-                              Text("Partially Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
+                              const Text("Partially Resolved", style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"),),
                               Spacer(),
                               Text("15%",style: TextStyle(fontSize: 15,fontFamily: "Montserrat-Medium"))
                             ],
@@ -308,7 +308,6 @@ class _DashboardPieChartState extends State<DashboardPieChart> {
                         ],
                       ),
                     )
-
                   ],
                 ),
               ),
